@@ -1,4 +1,4 @@
-import 'dart:math';
+// ignore_for_file: avoid_print
 
 import 'package:counter_app/bloc/counter_bloc.dart';
 import 'package:flutter/material.dart';
