@@ -1,11 +1,12 @@
 part of 'counter_bloc.dart';
 
-class CounterState {
-  final int count;
+@freezed
+class CounterState with _$CounterState {
 
-  CounterState({required this.count});
-}
+  const factory CounterState({
+    required int count
+  }) = _CounterState;
 
-class CounterInitial extends CounterState {
-  CounterInitial() : super(count: 0);
+  factory CounterState.initial() => const CounterState(count: 0);
+  
 }
